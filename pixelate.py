@@ -2,7 +2,7 @@ import cv2
 
 def pixel(x1,y1,x2,y2,image):
     start = [x1,y1] #upper left bound
-    end = [x2,y2] #lower right bound
+    end = [x2,y2] #bottom right bound
     size = 10 #pixel sized
     end[0] = end[0]-((end[0]-start[0]) % size)#adjusting so that pixel is in the image.
     end[1] = end[1]-((end[1]-start[1]) % size)
